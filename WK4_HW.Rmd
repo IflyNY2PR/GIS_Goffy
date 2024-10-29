@@ -83,10 +83,9 @@ ggplot(Trend_GII) +
   labs(caption = "Source: Human Development Report (https://hdr.undp.org/data-center/)")
   
 ```
-
+##Try to Add Annotation
 ```{r}
 
-library(ggplot2)
 library(grid)
 
 ggplot(Trend_GII) + 
