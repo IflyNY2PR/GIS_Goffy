@@ -23,7 +23,6 @@ World_Countries <- st_read(here("Data","World_Countries_(Generalized)_9029012925
 Inequality_Data <- read_csv(here("Data", "HDR23-24_Composite_indices_complete_time_series.csv"))
 
 ```
-
 ##Clean Data
 ```{r}
 
@@ -76,9 +75,9 @@ ggplot(Trend_GII) +
     na.value = "gray", 
     name = "GII Difference") +
   theme_minimal() +
-  ggtitle ("World Gender Inequality Trend (2010-2019)") +
+  ggtitle ("WorldGender Inequality Trend (2010-2019)") +
   theme(plot.title = element_text(hjust = 0.5, size = 16, face = "bold")) +
-  labs(caption = "Source: Human Development Report (https://hdr.undp.org/data-center/)")
+  labs(caption = "Source: Human Development Report (https://hdr.undp.org/data-center)")
   
 ```
 
@@ -106,6 +105,8 @@ ggplot(Trend_GII) +
   annotation_custom(
     grob = textGrob("No Data", gp = gpar(col = "black", fontsize = 10)),
     xmin = -150, xmax = -140, ymin = -110, ymax = -100)
+
+
 
 ```
 
